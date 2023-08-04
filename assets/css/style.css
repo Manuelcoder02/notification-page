@@ -1,0 +1,305 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1em;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url(/assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "PJSB";
+  src: url(/assets/fonts/static/PlusJakartaSans-ExtraBold.ttf);
+}
+
+img {
+  max-width: 80%;
+  vertical-align: middle;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* HEADER STYLING */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 0;
+  align-items: center;
+}
+
+.notification {
+  color: hsl(224, 21%, 14%);
+  font-size: 1.3em;
+  font-family: "PJSB";
+}
+
+.number-of-message {
+  color: #fff;
+  background-color: hsl(219, 85%, 26%);
+  margin-left: 0.3em;
+  padding: 0.2em 0.7em;
+  border-radius: 10px;
+}
+.mark-read {
+  color: hsl(219, 12%, 42%);
+  font-weight: 700;
+  cursor: pointer;
+}
+.mark-read:hover,
+.mark-read:focus {
+  color: hsl(219, 85%, 26%);
+}
+.name:hover,
+.name:focus {
+  color: hsl(219, 85%, 26%);
+}
+
+/* NOTIFICATION BARS */
+
+.unread {
+  display: flex;
+  background-color: hsl(211, 68%, 94%);
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 10px;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 0.7em;
+  color: hsl(219, 14%, 63%);
+  font-weight: 700;
+  /* border: 3px solid red; */
+}
+.notification-details {
+  display: flex;
+  flex-direction: column;
+  /* border: 3px solid green; */
+}
+
+/* .unread-notification .first .notification-details {
+  border: 3px solid green;
+  width: 80%;
+} */
+
+.unread-notification .profile-image {
+  align-self: flex-start;
+  width: 20%;
+  /* border: 3px solid yellow; */
+}
+.unread-notification p:first-child {
+  position: relative;
+}
+.dot {
+  background-color: red;
+  /* width: 100px; */
+  padding: 0em 0.5em;
+  color: red;
+  font-size: 0.5em;
+  border-radius: 50%;
+  margin-left: 5px;
+  position: absolute;
+  top: 49px;
+}
+.unread-notification .notification-details p:first-child {
+  margin-bottom: 0.5em;
+  /* border: 3px solid black; */
+}
+.unread-notification .second p:first-child .dot {
+  top: 6px;
+}
+.group-name {
+  font-family: "PJSB";
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
+
+.name {
+  font-family: "PJSB";
+  color: hsl(224, 21%, 14%);
+  cursor: pointer;
+}
+.post {
+  color: hsl(219, 12%, 42%);
+  font-family: "PJSB";
+}
+.unread-notification .notification-details {
+  width: 75%;
+}
+
+/* READ STYLING */
+.read {
+  display: flex;
+  background-color: #fff;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 10px;
+  justify-content: space-between;
+  width: 100%;
+  color: hsl(219, 14%, 63%);
+  font-weight: 700;
+}
+
+.read-messages .first {
+  /* border: 3px solid red; */
+  gap: 1em;
+}
+.read-messages .first .profile-image {
+  /* border: 3px solid black; */
+  width: 25%;
+}
+.read-messages .first .notification-details {
+  /* border: 3px solid green; */
+  width: 100%;
+}
+.read-messages .time {
+  margin-top: 0.5em;
+}
+
+.message-details {
+  border: 1px solid hsl(205, 33%, 90%);
+  margin-top: 1em;
+  padding: 1em;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.message-details:hover,
+.message-details:focus {
+  background-color: hsl(211, 68%, 94%);
+}
+
+.read-messages .second {
+  /* border: 3px solid green; */
+  width: 100%;
+}
+.read-messages .second .profile-image {
+  /* border: 3px solid black; */
+  width: 20%;
+}
+.read-messages .second .notification-details {
+  /* border: 3px solid red; */
+  width: 50%;
+}
+.extra-image {
+  /* border: 3px solid blue; */
+  width: 20%;
+  cursor: pointer;
+}
+
+.read-messages .third {
+  /* border: 3px solid green; */
+  width: 100%;
+  gap: 1em;
+  justify-content: flex-start;
+}
+.read-messages .third .profile-image {
+  /* border: 3px solid blue; */
+  width: 20%;
+}
+.read-messages .third .notification-details {
+  /* border: 3px solid red; */
+  width: 50%;
+  /* margin: 0 auto; */
+}
+
+.read-messages .fourth {
+  /* border: 3px solid green; */
+  width: 100%;
+  gap: 1em;
+  justify-content: flex-start;
+}
+.read-messages .fourth .profile-image {
+  /* border: 3px solid blue; */
+  width: 20%;
+}
+.read-messages .fourth .notification-details {
+  /* border: 3px solid red; */
+  width: 70%;
+}
+
+/* ATTIRUBUTION STYLING */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 1em 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*  FOR SCREENS BIGGER THAN 500px */
+
+@media (min-width: 500px) {
+  body {
+    padding: 2em 0;
+  }
+  .container {
+    /* border: 3px solid blue; */
+    font-size: 0.8em;
+    padding: 1em;
+    border-radius: 20px;
+    width: 50%;
+    box-shadow: 10px 10px 50px 10px rgba(0, 0, 0, 0.2);
+  }
+  img {
+    max-width: 50%;
+  }
+  .unread-notification .first,
+  .unread-notification .second,
+  .unread-notification .third,
+  .read-messages .first,
+  .read-messages .second,
+  .read-messages .third,
+  .read-messages .fourth {
+    /* border: 3px solid blue; */
+    width: 100%;
+  }
+
+  .unread-notification .first .notification-details,
+  .unread-notification .second .notification-details,
+  .unread-notification .third .notification-details,
+  .read-messages .first .notification-details,
+  .read-messages .third .notification-details,
+  .read-messages .fourth .notification-details {
+    /* border: 3px solid red; */
+    width: 100%;
+  }
+  .unread-notification .first .profile-image,
+  .unread-notification .second .profile-image,
+  .unread-notification .third .profile-image,
+  .read-messages .first .profile-image,
+  .read-messages .third .profile-image,
+  .read-messages .fourth .profile-image {
+    /* border: 3px solid green; */
+    width: 15%;
+  }
+
+  .read-messages .second {
+    /* border: 3px solid red; */
+    width: 100%;
+  }
+  .read-messages .second .notification-details {
+    /* border: 3px solid green; */
+    width: 70%;
+  }
+  .read-messages .second .extra-image {
+    /* border: 3px solid blue; */
+    width: 15%;
+  }
+  .read-messages .second .profile-image {
+    /* border: 3px solid black; */
+    width: 15%;
+  }
+
+  .unread-notification .first p:first-child .dot {
+    top: 6px;
+  }
+}
